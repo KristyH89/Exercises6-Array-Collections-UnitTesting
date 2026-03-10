@@ -104,20 +104,51 @@ Sorted string array: [London, New York, Paris, Stockholm]
         int[] secondArray = Arrays.copyOf(firstArray, firstArray.length);
 
         System.out.println("Elements from first array: ");
-        for (int num: firstArray) {
+        for (int num : firstArray) {
             System.out.println(num + " ");
         }
         System.out.println();
 
         System.out.println("Elements from second array: ");
-        for (int num: secondArray) {
+        for (int num : secondArray) {
             System.out.println(num + " ");
         }
-            System.out.println();
-            System.out.println("Next is exercise 5:");
-            System.out.println();
-
-
-
+        System.out.println();
+        System.out.println("Next is exercise 5:");
+        System.out.println();
     }
-}
+        public void exercise5() {
+
+            System.out.println("""
+    -----------------------------------------------------------------------------
+    5. Create a two-dimensional string array [2][2]. Assign values containing any Country and City.
+       Expected output:
+       France Paris
+       Sweden Stockholm
+    -----------------------------------------------------------------------------
+    """);
+            System.out.println();
+
+            String[][] countriesCities = {
+                    {"France", "Paris"},
+                    {"Sweden", "Stockholm"}
+            };
+
+            // Nested loop voor printen
+            for (int i = 0; i < countriesCities.length; i++) {
+                for (int j = 0; j < countriesCities[i].length; j++) {
+                    System.out.print(countriesCities[i][j] + " "); // gebruik print i.p.v println
+                }
+                System.out.println(); // nieuwe regel per rij
+            }
+
+            System.out.println();
+            System.out.println("Next is exercise 6:");
+            System.out.println();
+
+        }
+
+
+        }
+
+
