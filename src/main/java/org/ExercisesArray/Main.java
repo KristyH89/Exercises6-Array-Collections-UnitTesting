@@ -15,5 +15,7 @@ public class Main {
        exercisesArray.exercise4();
 
        exercisesArray.exercise5();
+
+       exercisesArray.exercise6();
     }
 }
