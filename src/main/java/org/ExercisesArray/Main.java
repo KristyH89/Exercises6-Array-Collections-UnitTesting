@@ -8,7 +8,8 @@ public class Main {
 
        exercisesArray.exercise1();
 
-       exercisesArray.runExercise2();
+       exercisesArray.exercise2();
 
+       exercisesArray.exercise3();
     }
 }

@@ -32,9 +32,27 @@ Expected output: Index position of number 5 is: 2     */
         return -1;
 
     }
-    public void runExercise2() {
+    public void exercise2() {
         int index = indexOf(numbers, 5);
         System.out.println("Index position of number 5 is: " + index);
     }
+
+/* 3. Write a program which will sort a string array.
+Expected output:
+String array: [Paris, London, New York, Stockholm]
+Sorted string array: [London, New York, Paris, Stockholm]  */
+
+public void exercise3() {
+
+    String[] cities = {"Paris", "London", "New York", "Stockholm"};
+
+    System.out.println("String array: " + Arrays.toString(cities));
+
+    Arrays.sort(cities);
+
+    System.out.println("Sorted string array: " + Arrays.toString(cities));
+
+}
+
 
 }
