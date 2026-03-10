@@ -1,7 +1,13 @@
-package org.example;
+package org.ExercisesArray;
+import java.util.Arrays;
 
 public class Main {
-    static void main() {
+   public static void main(String[] args) {
+
+       ExercisesArray exercisesArray = new ExercisesArray();
+
+       exercisesArray.programNumbers();
+
 
     }
 }
