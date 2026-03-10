@@ -6,8 +6,9 @@ public class Main {
 
        ExercisesArray exercisesArray = new ExercisesArray();
 
-       exercisesArray.programNumbers();
+       exercisesArray.exercise1();
 
+       exercisesArray.runExercise2();
 
     }
 }
