@@ -174,6 +174,42 @@ public class ExercisesArray {
         System.out.println("Next is exercise 7:");
         System.out.println();
     }
+
+    public void exercise7() {
+
+        System.out.println("""
+-----------------------------------------------------------------------------
+7. Write a program which will set up an array to hold 10 numbers and print out only the uneven numbers.
+Example:
+Array: 1 2 4 7 9 12
+Odd Array: 1 7 9
+-----------------------------------------------------------------------------
+""");
+
+        // Array met 10 getallen
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        // Print originele array
+        System.out.print("Array: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        // Print alleen oneven getallen
+        System.out.print("Odd Array: ");
+        for (int num : numbers) {
+            if (num % 2 != 0) { // check of het oneven is
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
+
+        System.out.println();
+        System.out.println("Next is exercise 8:");
+        System.out.println();
+    }
+
 }
 
 
