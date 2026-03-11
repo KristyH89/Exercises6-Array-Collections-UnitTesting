@@ -253,6 +253,41 @@ Odd Array: 1 7 9
         System.out.println();
         }
 
+
+    public int[] addElement(int[] array, int newNumber) {
+
+        int[] newArray = new int[array.length + 1];
+
+        for (int i = 0; i < array.length; i++) {
+            newArray[i] = array[i];
+        }
+
+        newArray[array.length] = newNumber;
+
+        return newArray;
+    }
+
+
+    public void exercise9() {
+
+        System.out.println("""
+-----------------------------------------------------------------------------
+9. Write a method which will add elements in an array.
+Remember that arrays are fixed in size so you need to expand the array.
+-----------------------------------------------------------------------------
+""");
+
+        int[] numbers9 = {10, 20, 30};
+
+        numbers9 = addElement(numbers9, 40);
+
+        for (int num : numbers9) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println();
+    }
+
 }
 
 
