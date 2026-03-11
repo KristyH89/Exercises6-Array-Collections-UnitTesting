@@ -210,6 +210,49 @@ Odd Array: 1 7 9
         System.out.println();
     }
 
+    public void exercise8() {
+
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                8. Write a program which will remove the duplicate elements of a given array
+                [20, 20, 40, 20, 30, 40, 50, 60, 50]
+                
+                Expected output:
+                Array: 20 20 40 20 30 40 50 60 50
+                Array without duplicates: 20 40 30 50 60
+                -----------------------------------------------------------------------------
+                """);
+
+        int[] numbers8 = {20, 20, 40, 20, 30, 40, 50, 60, 50};
+
+        System.out.println("Array: ");
+        for (int num : numbers8) {
+            System.out.println(num + " ");
+
+        }
+
+        System.out.println();
+
+        System.out.println("Array without duplicates: ");
+        for (int i = 0; i < numbers8.length; i++) {
+            boolean isDuplicate = false;
+
+            for (int j = 0; j < i; j++) {
+                if (numbers8[i] == numbers8[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            if (!isDuplicate) {
+                System.out.println(numbers8[i] + " ");
+            }
+        }
+            System.out.println();
+        System.out.println("Next is exercise 9:");
+        System.out.println();
+        }
+
 }
 
 
