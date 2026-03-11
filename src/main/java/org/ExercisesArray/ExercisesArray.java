@@ -160,7 +160,7 @@ public class ExercisesArray {
                 """);
         System.out.println();
 
-        int [] numbers = {43, 5, 23, 17, 2, 14};
+        int[] numbers = {43, 5, 23, 17, 2, 14};
 
         double sum = 0;
         for (int num : numbers) {
@@ -178,13 +178,13 @@ public class ExercisesArray {
     public void exercise7() {
 
         System.out.println("""
------------------------------------------------------------------------------
-7. Write a program which will set up an array to hold 10 numbers and print out only the uneven numbers.
-Example:
-Array: 1 2 4 7 9 12
-Odd Array: 1 7 9
------------------------------------------------------------------------------
-""");
+                -----------------------------------------------------------------------------
+                7. Write a program which will set up an array to hold 10 numbers and print out only the uneven numbers.
+                Example:
+                Array: 1 2 4 7 9 12
+                Odd Array: 1 7 9
+                -----------------------------------------------------------------------------
+                """);
 
         // Array met 10 getallen
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -225,15 +225,15 @@ Odd Array: 1 7 9
 
         int[] numbers8 = {20, 20, 40, 20, 30, 40, 50, 60, 50};
 
-        System.out.println("Array: ");
+        System.out.print("Array: ");
         for (int num : numbers8) {
-            System.out.println(num + " ");
+            System.out.print(num + " ");
 
         }
 
         System.out.println();
 
-        System.out.println("Array without duplicates: ");
+        System.out.print("Array without duplicates: ");
         for (int i = 0; i < numbers8.length; i++) {
             boolean isDuplicate = false;
 
@@ -245,13 +245,13 @@ Odd Array: 1 7 9
             }
 
             if (!isDuplicate) {
-                System.out.println(numbers8[i] + " ");
+                System.out.print(numbers8[i] + " ");
             }
         }
-            System.out.println();
+        System.out.println();
         System.out.println("Next is exercise 9:");
         System.out.println();
-        }
+    }
 
 
     public int[] addElement(int[] array, int newNumber) {
@@ -265,17 +265,19 @@ Odd Array: 1 7 9
         newArray[array.length] = newNumber;
 
         return newArray;
+
+
     }
 
 
     public void exercise9() {
 
         System.out.println("""
------------------------------------------------------------------------------
-9. Write a method which will add elements in an array.
-Remember that arrays are fixed in size so you need to expand the array.
------------------------------------------------------------------------------
-""");
+                -----------------------------------------------------------------------------
+                9. Write a method which will add elements in an array.
+                Remember that arrays are fixed in size so you need to expand the array.
+                -----------------------------------------------------------------------------
+                """);
 
         int[] numbers9 = {10, 20, 30};
 
@@ -285,6 +287,39 @@ Remember that arrays are fixed in size so you need to expand the array.
             System.out.print(num + " ");
         }
 
+        System.out.println();
+        System.out.println("Next is exercise 10:");
+        System.out.println();
+
+    }
+
+    public void exercise10() {
+
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                10. Write a program which will represent multiplication table stored in a
+                multidimensional array.
+                -----------------------------------------------------------------------------
+                """);
+
+        int[][] table = new int[10][10];
+
+        for (int i = 0; i < table.length; i++) {
+
+            for (int j = 0; j < table[i].length; j++) {
+                table[i][j] = (i +1) * (j +1);
+
+            }
+        }
+
+        for (int i = 0; i < table.length; i++) {
+            for (int j = 0; j < table[i].length; j++) {
+                System.out.printf("%4d", table[i][j]);
+            }
+            System.out.println();
+        }
+        System.out.println();
+        System.out.println("Next is exercise 11:");
         System.out.println();
     }
 
