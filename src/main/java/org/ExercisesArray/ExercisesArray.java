@@ -309,7 +309,7 @@ public class ExercisesArray {
         for (int i = 0; i < table.length; i++) {
 
             for (int j = 0; j < table[i].length; j++) {
-                table[i][j] = (i +1) * (j +1);
+                table[i][j] = (i + 1) * (j + 1);
 
             }
         }
@@ -328,16 +328,16 @@ public class ExercisesArray {
     public void exercise11() {
 
         System.out.println("""
------------------------------------------------------------------------------
-11. Write a program that ask the user for an integer and repeat that question
- until user give you a specific value that user already has been told about as 
- a message in your program. Store these values in an array and print that array. 
- After that reverse the array elements so that the first element becomes the 
- last element, the second element becomes the second to last element, etc. 
- Do not just reverse the order in which they are printed. 
- You need to change the way they are stored in the array.
------------------------------------------------------------------------------
-""");
+                -----------------------------------------------------------------------------
+                11. Write a program that ask the user for an integer and repeat that question
+                 until user give you a specific value that user already has been told about as 
+                 a message in your program. Store these values in an array and print that array. 
+                 After that reverse the array elements so that the first element becomes the 
+                 last element, the second element becomes the second to last element, etc. 
+                 Do not just reverse the order in which they are printed. 
+                 You need to change the way they are stored in the array.
+                -----------------------------------------------------------------------------
+                """);
 
         Scanner scanner = new Scanner(System.in);
 
@@ -360,8 +360,8 @@ public class ExercisesArray {
 
         for (int i = 0; i < numbers11.length / 2; i++) {
             int temp = numbers11[i];
-            numbers11[i] = numbers11[numbers11.length -1 -i];
-            numbers11[numbers11.length -1 -i] = temp;
+            numbers11[i] = numbers11[numbers11.length - 1 - i];
+            numbers11[numbers11.length - 1 - i] = temp;
         }
 
         System.out.println("Reversed array: " + Arrays.toString(numbers11));
@@ -369,7 +369,27 @@ public class ExercisesArray {
         System.out.println();
         System.out.println("Next is exercise 12:");
         System.out.println();
-}
+    }
+
+    public void exercise12() {
+
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                12. Write a program which prints the diagonal elements of a two-dimensional array.
+                -----------------------------------------------------------------------------
+                """);
+
+        int [][] matrix = {
+                {1,2,3},
+                {2,4,6},
+                {3,6,9}
+        };
+        System.out.print("Diagonal elements: ");
+        for (int i = 0; i < matrix.length; i++) {
+            System.out.print(matrix[i][i] + " ");
+        }
+        System.out.println();
+    }
 }
 
 

@@ -27,5 +27,7 @@ public class Main {
        exercisesArray.exercise10();
 
        exercisesArray.exercise11();
+
+       exercisesArray.exercise12();
     }
 }
