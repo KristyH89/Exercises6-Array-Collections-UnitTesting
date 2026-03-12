@@ -1,6 +1,7 @@
 package org.ExercisesArray;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ExercisesArray {
 
@@ -288,6 +289,7 @@ public class ExercisesArray {
         }
 
         System.out.println();
+        System.out.println();
         System.out.println("Next is exercise 10:");
         System.out.println();
 
@@ -323,6 +325,51 @@ public class ExercisesArray {
         System.out.println();
     }
 
+    public void exercise11() {
+
+        System.out.println("""
+-----------------------------------------------------------------------------
+11. Write a program that ask the user for an integer and repeat that question
+ until user give you a specific value that user already has been told about as 
+ a message in your program. Store these values in an array and print that array. 
+ After that reverse the array elements so that the first element becomes the 
+ last element, the second element becomes the second to last element, etc. 
+ Do not just reverse the order in which they are printed. 
+ You need to change the way they are stored in the array.
+-----------------------------------------------------------------------------
+""");
+
+        Scanner scanner = new Scanner(System.in);
+
+        int[] numbers11 = new int[0];
+        int input;
+
+        System.out.println("Enter integers (-1 to stop):");
+
+        while (true) {
+            input = scanner.nextInt();
+
+            if (input == -1) {
+                break;
+
+            }
+            numbers11 = addElement(numbers11, input);
+
+        }
+        System.out.println("Array: " + Arrays.toString(numbers11));
+
+        for (int i = 0; i < numbers11.length / 2; i++) {
+            int temp = numbers11[i];
+            numbers11[i] = numbers11[numbers11.length -1 -i];
+            numbers11[numbers11.length -1 -i] = temp;
+        }
+
+        System.out.println("Reversed array: " + Arrays.toString(numbers11));
+
+        System.out.println();
+        System.out.println("Next is exercise 12:");
+        System.out.println();
+}
 }
 
 
