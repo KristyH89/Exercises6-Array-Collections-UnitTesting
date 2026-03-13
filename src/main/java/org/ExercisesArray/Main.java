@@ -56,5 +56,7 @@ public class Main {
 
        collectionExercises.collectionExercise9();
 
+       collectionExercises.collectionExercise10();
+
    }
 }

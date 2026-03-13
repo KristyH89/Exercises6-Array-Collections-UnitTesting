@@ -230,6 +230,28 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 10:");
         System.out.println();
 
-
     }
+    public void collectionExercise10() {
+
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                10. Create a new HashMap of type <Integer, String> and populate it with elements
+                containing an id (Integer) and a car brand (String). Lastly, print out only the keys.
+                -----------------------------------------------------------------------------
+                """);
+        HashMap<Integer, String> cars1 = new HashMap<>();
+
+        cars1.put(1, "Tesla");
+        cars1.put(2, "Skoda");
+        cars1.put(3, "Volvo");
+        cars1.put(4, "BWM");
+        cars1.put(5, "Audi");
+
+        System.out.println("Keys: " + cars1.keySet());
+
+        System.out.println();
+        System.out.println("Next is Collectionexercise 11:");
+        System.out.println();
+    }
+
 }
