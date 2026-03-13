@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class Main {
    public static void main(String[] args) {
 
-       ExercisesArray exercisesArray = new ExercisesArray();
+   ExercisesArray exercisesArray = new ExercisesArray();
 
        exercisesArray.exercise1();
 
@@ -36,7 +36,9 @@ public class Main {
 
        exercisesArray.exercise13();
 
-       CollectionExercises collectionExercises = new CollectionExercises();
+// Collection Exercises
+
+   CollectionExercises collectionExercises = new CollectionExercises();
 
        collectionExercises.collectionExercise1();
 
@@ -62,5 +64,12 @@ public class Main {
 
        collectionExercises.collectionExercise12();
 
-   }
+// Challenges
+   Challenges challenges = new Challenges();
+
+       challenges.challenge1();
+
+
+
+       }
 }
