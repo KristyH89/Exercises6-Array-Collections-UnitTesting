@@ -68,4 +68,32 @@ public class Challenges {
 
     }
 
+    public void challenge3(){
+            System.out.println("""
+                -----------------------------------------------------------------------------
+                SuperHero: Create a new ArrayList of SuperHero, sort by age, and print each element
+                -----------------------------------------------------------------------------
+                """);
+
+            ArrayList<SuperHero> heroes = new ArrayList<>();
+
+            heroes.add(new SuperHero(1, "Superman", 35));
+            heroes.add(new SuperHero(2, "Wolverine", 137));
+            heroes.add(new SuperHero(3, "Aquaman", 32));
+            heroes.add(new SuperHero(4, "Dare Devil", 30));
+            heroes.add(new SuperHero(5, "Deadpool", 45));
+            heroes.add(new SuperHero(6, "Elektra", 29));
+            heroes.add(new SuperHero(7, "Green Arrow", 33));
+            heroes.add(new SuperHero(8, "Thor", 1500));
+
+            Collections.sort(heroes);
+
+            for (SuperHero hero : heroes) {
+                System.out.println(hero.getName() + " (Age: " + hero.getAge() + ")");
+            }
+
+        System.out.println();
+        System.out.println("Next is the last challenge!");
+        System.out.println();
+    }
 }

@@ -71,6 +71,8 @@ public class Main {
 
        challenges.challenge2();
 
+       challenges.challenge3();
+
 
 
        }
