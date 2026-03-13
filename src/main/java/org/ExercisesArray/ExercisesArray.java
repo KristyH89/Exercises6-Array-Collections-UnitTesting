@@ -324,7 +324,7 @@ public class ExercisesArray {
         System.out.println("Next is exercise 11:");
         System.out.println();
     }
-
+/*
     public void exercise11() {
 
         System.out.println("""
@@ -370,7 +370,7 @@ public class ExercisesArray {
         System.out.println("Next is exercise 12:");
         System.out.println();
     }
-
+*/
     public void exercise12() {
 
         System.out.println("""
@@ -437,7 +437,7 @@ public class ExercisesArray {
         System.out.print("Result array: " + java.util.Arrays.toString(resultArray));
         System.out.println();
         System.out.println();
-        System.out.println("This was the last one of the Array exercises, have a nice day!");
+        System.out.println("This was the last one of the Array exercises, the next ones are collection exercises!");
     }
 
 }

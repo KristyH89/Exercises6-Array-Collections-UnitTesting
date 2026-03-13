@@ -26,10 +26,23 @@ public class Main {
 
        exercisesArray.exercise10();
 
-       exercisesArray.exercise11();
+       /*
+       It's easier to block this exercises for now, so I cant test the other exercises,
+       when I'm done, I'm going to unblock this one
 
+       exercisesArray.exercise11();
+        */
        exercisesArray.exercise12();
 
        exercisesArray.exercise13();
+
+       CollectionExercises collectionExercises = new CollectionExercises();
+
+       collectionExercises.collectionExercise1();
+
+       collectionExercises.collectionExercise2();
+
+       collectionExercises.collectionExercise3();
+
     }
 }
