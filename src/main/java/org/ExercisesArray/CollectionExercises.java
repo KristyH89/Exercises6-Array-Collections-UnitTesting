@@ -113,14 +113,15 @@ public class CollectionExercises {
         System.out.println();
 
     }
+
     public void collectionExercise5() {
 
         System.out.println("""
-            -----------------------------------------------------------------------------
-            5. Create a new HashSet and populate it with the days of the week. 
-               Lastly, print the set and pay attention to the order of the elements.
-            -----------------------------------------------------------------------------
-            """);
+                -----------------------------------------------------------------------------
+                5. Create a new HashSet and populate it with the days of the week. 
+                   Lastly, print the set and pay attention to the order of the elements.
+                -----------------------------------------------------------------------------
+                """);
         Set<String> daysOfWeekSet = new HashSet<>(Arrays.asList(
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
         ));
@@ -131,7 +132,28 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 6:");
         System.out.println();
 
+    }
+    public void collectionExercise6() {
+
+        System.out.println("""
+    -----------------------------------------------------------------------------
+    6. Create a new HashSet and populate it with the days of the week.
+       Then convert the HashSet to an ArrayList.
+    -----------------------------------------------------------------------------
+    """);
+
+        HashSet<String> daysSet = new HashSet<>(Arrays.asList(
+                "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ));
+
+        System.out.println("HashSet of days: " + daysSet);
+
+        ArrayList<String> daysList = new ArrayList<>(daysSet);
+
+        System.out.println("Converted to ArrayList: " + daysList);
+
+        System.out.println();
+        System.out.println("Next is Collectionexercise 7:");
+        System.out.println();
 }
-
-
 }
