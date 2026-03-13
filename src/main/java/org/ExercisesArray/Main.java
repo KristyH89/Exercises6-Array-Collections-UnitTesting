@@ -44,5 +44,7 @@ public class Main {
 
        collectionExercises.collectionExercise3();
 
+       collectionExercises.collectionExercise4();
+
     }
 }
