@@ -156,4 +156,29 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 7:");
         System.out.println();
 }
+
+    public void collectionExercise7() {
+
+        System.out.println("""
+        -----------------------------------------------------------------------------
+        8. Create a new HashSet and populate it with random names. Then convert the HashSet
+        to an ArrayList. Lastly, manually sort the list in alphabetical order and print it out.
+        -----------------------------------------------------------------------------
+        """);
+
+        HashSet<String> namesSet = new HashSet<>(Arrays.asList(
+                "Legolas", "Gimli", "Frodo", "Gandalf", "Aragorn", "Sam", "Pipin", "Arwen"
+        ));
+
+        System.out.println("HashSet of names: " + namesSet);
+
+        ArrayList<String> namesList = new ArrayList<>(namesSet);
+        Collections.sort(namesList);
+
+        System.out.println("Sorted ArrayList: " + namesList);
+
+        System.out.println();
+        System.out.println("Next is Collectionexercise 8:");
+        System.out.println();
+    }
 }

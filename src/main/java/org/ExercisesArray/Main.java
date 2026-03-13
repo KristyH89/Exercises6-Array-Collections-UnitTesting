@@ -50,6 +50,8 @@ public class Main {
 
        collectionExercises.collectionExercise6();
 
+       collectionExercises.collectionExercise7();
+
 
    }
 }
