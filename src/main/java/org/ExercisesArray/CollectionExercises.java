@@ -182,21 +182,22 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 8:");
         System.out.println();
     }
+
     public void collectionExercise8() {
 
         System.out.println("""
-    -----------------------------------------------------------------------------
-    8. Create a new HashSet and populate it with random names.
-       Lastly, sort the names in alphabetical order using only a Set or a child of Set.
-    -----------------------------------------------------------------------------
-    """);
-    HashSet<String> randomNames = new HashSet<>(Arrays.asList(
-        "Sheldon", "Penny", "Leonard", "Howard", "Amy", "Rajesh", "Bernadette", "Stuart"
-    ));
+                -----------------------------------------------------------------------------
+                8. Create a new HashSet and populate it with random names.
+                   Lastly, sort the names in alphabetical order using only a Set or a child of Set.
+                -----------------------------------------------------------------------------
+                """);
+        HashSet<String> randomNames = new HashSet<>(Arrays.asList(
+                "Sheldon", "Penny", "Leonard", "Howard", "Amy", "Rajesh", "Bernadette", "Stuart"
+        ));
 
-    System.out.println("HashSet of names (unordered): " + randomNames);
+        System.out.println("HashSet of names (unordered): " + randomNames);
 
-    TreeSet<String> sortedNames = new TreeSet<>(randomNames);
+        TreeSet<String> sortedNames = new TreeSet<>(randomNames);
         System.out.println();
 
         System.out.println("Sorted names using TreeSet: " + sortedNames);
@@ -205,7 +206,7 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 9:");
         System.out.println();
 
-}
+    }
 
     public void collectionExercise9() {
 
@@ -231,6 +232,7 @@ public class CollectionExercises {
         System.out.println();
 
     }
+
     public void collectionExercise10() {
 
         System.out.println("""
@@ -253,5 +255,30 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 11:");
         System.out.println();
     }
+
+    public void collectionExercise11() {
+
+        System.out.println("""
+        -----------------------------------------------------------------------------
+        11. Create a new HashMap of type <Integer, String> and populate it with elements
+        containing an id (Integer) and a car brand (String). Lastly, print out only the values.
+        -----------------------------------------------------------------------------
+        """);
+
+        HashMap<Integer, String> cars11 = new HashMap<>();
+
+        cars11.put(1, "Tesla");
+        cars11.put(2, "Skoda");
+        cars11.put(3, "Volvo");
+        cars11.put(4, "BWM");
+        cars11.put(5, "Audi");
+
+        System.out.println("Car Brands: " + cars11.values());
+
+        System.out.println();
+        System.out.println("Next is Collectionexercise 12:");
+        System.out.println();
+    }
+
 
 }
