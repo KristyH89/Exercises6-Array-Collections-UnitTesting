@@ -259,11 +259,11 @@ public class CollectionExercises {
     public void collectionExercise11() {
 
         System.out.println("""
-        -----------------------------------------------------------------------------
-        11. Create a new HashMap of type <Integer, String> and populate it with elements
-        containing an id (Integer) and a car brand (String). Lastly, print out only the values.
-        -----------------------------------------------------------------------------
-        """);
+                -----------------------------------------------------------------------------
+                11. Create a new HashMap of type <Integer, String> and populate it with elements
+                containing an id (Integer) and a car brand (String). Lastly, print out only the values.
+                -----------------------------------------------------------------------------
+                """);
 
         HashMap<Integer, String> cars11 = new HashMap<>();
 
@@ -280,5 +280,32 @@ public class CollectionExercises {
         System.out.println();
     }
 
+    public void collectionExercise12() {
 
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                12. Create a new class called Car.
+                Add fields for Id, Brand, and Model with getters and setters.
+                Create a new HashMap<Integer, Car> and populate it.
+                Lastly, print out only the car's brand.
+                -----------------------------------------------------------------------------
+                """);
+
+        HashMap<Integer, Car> cars12 = new HashMap<>();
+
+        cars12.put(1, new Car(1, "Tesla", "Model S"));
+        cars12.put(2, new Car(2, "Skoda", "Octavia"));
+        cars12.put(3, new Car(3, "Volvo", "XC60"));
+        cars12.put(4, new Car(4, "BWM", "X5"));
+        cars12.put(5, new Car(5, "Audi", "A6"));
+
+        for (Car car : cars12.values()) {
+            System.out.println(car.getBrand());
+
+        }
+        System.out.println();
+
+        System.out.println("This was the last one of the Collection exercises, the next ones are challenges!");
+        System.out.println();
+    }
 }
