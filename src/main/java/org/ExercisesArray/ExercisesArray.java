@@ -379,17 +379,67 @@ public class ExercisesArray {
                 -----------------------------------------------------------------------------
                 """);
 
-        int [][] matrix = {
-                {1,2,3},
-                {2,4,6},
-                {3,6,9}
+        int[][] matrix = {
+                {1, 2, 3},
+                {2, 4, 6},
+                {3, 6, 9}
         };
         System.out.print("Diagonal elements: ");
         for (int i = 0; i < matrix.length; i++) {
             System.out.print(matrix[i][i] + " ");
         }
         System.out.println();
+
+        System.out.println();
+        System.out.println("Next is exercise 13:");
+        System.out.println();
+
+
     }
+
+    public void exercise13() {
+
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                13. Create two arrays with arbitrary size and fill one with random numbers. 
+                Then copy over the numbers from the array with random numbers so that the even 
+                numbers are located in the rear (the right side) part of the array and the odd 
+                numbers are located in the front part (the left side).
+                -----------------------------------------------------------------------------
+                """);
+
+        int size = 10;
+
+        int[] randomArray = new int[size];
+        int[] resultArray = new int[size];
+
+        java.util.Random random = new java.util.Random();
+
+        for (int i = 0; i < size; i++) {
+            randomArray[i] = random.nextInt(100);
+        }
+        System.out.print("Random array: " + java.util.Arrays.toString(randomArray));
+
+        int left = 0;
+        int right = size -1;
+
+        for (int num : randomArray) {
+
+            if (num % 2 != 0 ) {
+                resultArray[left] = num;
+                left++;
+            } else {
+                resultArray[right] = num;
+                right--;
+            }
+        }
+
+        System.out.print("Result array: " + java.util.Arrays.toString(resultArray));
+        System.out.println();
+        System.out.println();
+        System.out.println("This was the last one of the Array exercises, have a nice day!");
+    }
+
 }
 
 
