@@ -324,7 +324,7 @@ public class ExercisesArray {
         System.out.println("Next is exercise 11:");
         System.out.println();
     }
-/*
+
     public void exercise11() {
 
         System.out.println("""
@@ -370,7 +370,7 @@ public class ExercisesArray {
         System.out.println("Next is exercise 12:");
         System.out.println();
     }
-*/
+
     public void exercise12() {
 
         System.out.println("""

@@ -7,13 +7,13 @@ public class Challenges {
     public void challenge1() {
 
         System.out.println("""
-       -----------------------------------------------------------------------------
-       1. Create an empty Set and populate it with all the days of the week. 
-       Next, create a second Set and populate it with only the weekend days 
-       (SATURDAY and SUNDAY). Lastly, compare the two sets and retain in the first 
-       set only those days that are the same in both sets.
-       -----------------------------------------------------------------------------
-       """);
+                -----------------------------------------------------------------------------
+                1. Create an empty Set and populate it with all the days of the week. 
+                Next, create a second Set and populate it with only the weekend days 
+                (SATURDAY and SUNDAY). Lastly, compare the two sets and retain in the first 
+                set only those days that are the same in both sets.
+                -----------------------------------------------------------------------------
+                """);
 
         Set<String> allDays = new HashSet<>(Arrays.asList(
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
@@ -32,12 +32,12 @@ public class Challenges {
     public void challenge2() {
 
         System.out.println("""
-        -----------------------------------------------------------------------------
-        2. Create a new HashMap of type <String, String> and populate it with elements
-        containing an email (String) and a name (String). Next, create a new Set and
-        populate it with the keys from the HashMap.
-        -----------------------------------------------------------------------------
-        """);
+                -----------------------------------------------------------------------------
+                2. Create a new HashMap of type <String, String> and populate it with elements
+                containing an email (String) and a name (String). Next, create a new Set and
+                populate it with the keys from the HashMap.
+                -----------------------------------------------------------------------------
+                """);
 
         HashMap<String, String> emailList = new HashMap<>();
 
@@ -68,32 +68,57 @@ public class Challenges {
 
     }
 
-    public void challenge3(){
-            System.out.println("""
+    public void challenge3() {
+        System.out.println("""
                 -----------------------------------------------------------------------------
                 SuperHero: Create a new ArrayList of SuperHero, sort by age, and print each element
                 -----------------------------------------------------------------------------
                 """);
 
-            ArrayList<SuperHero> heroes = new ArrayList<>();
+        ArrayList<SuperHero> heroes = new ArrayList<>();
 
-            heroes.add(new SuperHero(1, "Superman", 35));
-            heroes.add(new SuperHero(2, "Wolverine", 137));
-            heroes.add(new SuperHero(3, "Aquaman", 32));
-            heroes.add(new SuperHero(4, "Dare Devil", 30));
-            heroes.add(new SuperHero(5, "Deadpool", 45));
-            heroes.add(new SuperHero(6, "Elektra", 29));
-            heroes.add(new SuperHero(7, "Green Arrow", 33));
-            heroes.add(new SuperHero(8, "Thor", 1500));
+        heroes.add(new SuperHero(1, "Superman", 35));
+        heroes.add(new SuperHero(2, "Wolverine", 137));
+        heroes.add(new SuperHero(3, "Aquaman", 32));
+        heroes.add(new SuperHero(4, "Dare Devil", 30));
+        heroes.add(new SuperHero(5, "Deadpool", 45));
+        heroes.add(new SuperHero(6, "Elektra", 29));
+        heroes.add(new SuperHero(7, "Green Arrow", 33));
+        heroes.add(new SuperHero(8, "Thor", 1500));
 
-            Collections.sort(heroes);
+        Collections.sort(heroes);
 
-            for (SuperHero hero : heroes) {
-                System.out.println(hero.getName() + " (Age: " + hero.getAge() + ")");
-            }
+        for (SuperHero hero : heroes) {
+            System.out.println(hero.getName() + " (Age: " + hero.getAge() + ")");
+        }
 
         System.out.println();
         System.out.println("Next is the last challenge!");
         System.out.println();
+    }
+
+    public void challenge4() {
+        System.out.println("""
+                -----------------------------------------------------------------------------
+                4. Create an array of type int with numbers: {1,4,4,2,6,7}
+                   Next, create an appropriate Collection and populate it with the contents of the array.
+                   Lastly, print out each element in the collection without duplicates.
+                -----------------------------------------------------------------------------
+                """);
+
+        int[] numbers = {1, 4, 4, 2, 6, 7};
+
+        Set<Integer> numberSet = new HashSet<>();
+
+        for (int num : numbers) {
+            numberSet.add(num);
+        }
+
+        System.out.println("Collection without duplicates: " + numberSet);
+
+        System.out.println();
+        System.out.println("So that was the last challenge! Have a nice day!");
+        System.out.println();
+
     }
 }

@@ -26,12 +26,9 @@ public class Main {
 
        exercisesArray.exercise10();
 
-       /*
-       It's easier to block this exercises for now, so I cant test the other exercises,
-       when I'm done, I'm going to unblock this one
 
        exercisesArray.exercise11();
-        */
+
        exercisesArray.exercise12();
 
        exercisesArray.exercise13();
@@ -73,7 +70,7 @@ public class Main {
 
        challenges.challenge3();
 
-
+       challenges.challenge4();
 
        }
 }
