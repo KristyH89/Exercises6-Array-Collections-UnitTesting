@@ -46,5 +46,8 @@ public class Main {
 
        collectionExercises.collectionExercise4();
 
-    }
+       collectionExercises.collectionExercise5();
+
+
+   }
 }
