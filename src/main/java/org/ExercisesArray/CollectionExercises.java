@@ -133,14 +133,15 @@ public class CollectionExercises {
         System.out.println();
 
     }
+
     public void collectionExercise6() {
 
         System.out.println("""
-    -----------------------------------------------------------------------------
-    6. Create a new HashSet and populate it with the days of the week.
-       Then convert the HashSet to an ArrayList.
-    -----------------------------------------------------------------------------
-    """);
+                -----------------------------------------------------------------------------
+                6. Create a new HashSet and populate it with the days of the week.
+                   Then convert the HashSet to an ArrayList.
+                -----------------------------------------------------------------------------
+                """);
 
         HashSet<String> daysSet = new HashSet<>(Arrays.asList(
                 "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
@@ -155,16 +156,16 @@ public class CollectionExercises {
         System.out.println();
         System.out.println("Next is Collectionexercise 7:");
         System.out.println();
-}
+    }
 
     public void collectionExercise7() {
 
         System.out.println("""
-        -----------------------------------------------------------------------------
-        8. Create a new HashSet and populate it with random names. Then convert the HashSet
-        to an ArrayList. Lastly, manually sort the list in alphabetical order and print it out.
-        -----------------------------------------------------------------------------
-        """);
+                -----------------------------------------------------------------------------
+                8. Create a new HashSet and populate it with random names. Then convert the HashSet
+                to an ArrayList. Lastly, manually sort the list in alphabetical order and print it out.
+                -----------------------------------------------------------------------------
+                """);
 
         HashSet<String> namesSet = new HashSet<>(Arrays.asList(
                 "Legolas", "Gimli", "Frodo", "Gandalf", "Aragorn", "Sam", "Pipin", "Arwen"
@@ -181,4 +182,28 @@ public class CollectionExercises {
         System.out.println("Next is Collectionexercise 8:");
         System.out.println();
     }
+    public void collectionExercise8() {
+
+        System.out.println("""
+    -----------------------------------------------------------------------------
+    8. Create a new HashSet and populate it with random names.
+       Lastly, sort the names in alphabetical order using only a Set or a child of Set.
+    -----------------------------------------------------------------------------
+    """);
+    HashSet<String> randomNames = new HashSet<>(Arrays.asList(
+        "Sheldon", "Penny", "Leonard", "Howard", "Amy", "Rajesh", "Bernadette", "Stuart"
+    ));
+
+    System.out.println("HashSet of names (unordered): " + randomNames);
+
+    TreeSet<String> sortedNames = new TreeSet<>(randomNames);
+        System.out.println();
+
+        System.out.println("Sorted names using TreeSet: " + sortedNames);
+
+        System.out.println();
+        System.out.println("Next is Collectionexercise 9:");
+        System.out.println();
+
+}
 }
